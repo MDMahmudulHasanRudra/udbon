@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Udbon — Business software made in Bangladesh</title>
+<title>Udbon — Software for Bangladeshi businesses</title>
 <meta name="description" content="Udbon builds Chithii AI, Maxr CRM and SR E-commerce for businesses in Bangladesh. Priced in Taka, works in Bangla, English and Banglish.">
 <meta name="page-type" content="software">
 <meta name="site-kind" content="software">
@@ -46,7 +46,7 @@ h3{font-size:22px;font-weight:700}
 .muted{color:var(--muted)}
 
 /* buttons */
-.btn{--bg:var(--ink);--fg:#fff;position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;height:50px;padding:0 24px;border-radius:999px;background:var(--bg);color:var(--fg);font:600 15px/1 var(--f-body);transition:transform .18s var(--ease),box-shadow .18s var(--ease),background .18s}
+.btn{--bg:var(--ink);--fg:#fff;position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;height:50px;padding:0 24px;border-radius:999px;background:var(--bg);color:var(--fg);font:600 15px/1 var(--f-body);white-space:nowrap;transition:transform .18s var(--ease),box-shadow .18s var(--ease),background .18s}
 .btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(15,22,64,.5)}
 .btn:active{transform:translateY(0) scale(.98);box-shadow:none}
 .btn .arr{transition:transform .2s var(--ease)}
@@ -320,8 +320,84 @@ footer{background:var(--band);color:var(--band-muted);padding:64px 0 32px;font-s
 .f-grid a{transition:color .15s}.f-grid a:hover{color:#fff}
 .f-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:48px;padding-top:24px;border-top:1px solid var(--band-line);font-size:13.5px}
 
+
+/* ===== modern layer ===== */
+.badge{display:inline-flex;align-items:center;gap:9px;height:34px;padding:0 14px 0 12px;border-radius:999px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);font:600 13px/1 var(--f-body);color:var(--ink-2);margin-bottom:24px}
+.badge i{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px var(--green-soft);animation:live 2.8s infinite}
+@keyframes live{50%{box-shadow:0 0 0 7px rgba(15,159,124,.06)}}
+.hero{display:block!important}
+.hero .wrap{display:block!important}
+.hero-grid{display:grid;grid-template-columns:1fr 1.12fr;gap:56px;align-items:center}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(15,22,64,.09) 1px,transparent 1px);background-size:24px 24px;-webkit-mask-image:radial-gradient(ellipse 60% 70% at 72% 40%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 60% 70% at 72% 40%,#000 20%,transparent 75%);pointer-events:none;z-index:0}
+.hero-visual{position:relative}
+.float{position:absolute;display:flex;gap:12px;align-items:center;padding:12px 16px 12px 12px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-lg);font-size:13px;transition:transform .25s var(--ease)}
+.float:hover{transform:translateY(-3px)}
+.float .tile{width:36px;height:36px;font-size:15px;border-radius:10px}
+.float small{display:block;font-size:11px;color:var(--muted);font-weight:600}
+.float b{display:block;font-weight:700;font-family:var(--f-head);font-size:14px}
+.float span:last-child{color:var(--ink-2);font-size:12px}
+.f-crm{left:-44px;bottom:64px;animation:bob 4s ease-in-out infinite}
+.f-shop{right:-28px;top:-26px;animation:bob 4s ease-in-out 2s infinite}
+@keyframes bob{50%{translate:0 -6px}}
+.works{display:flex;align-items:center;gap:28px;margin-top:36px;padding-top:24px;border-top:1px solid var(--line)}
+.works-l{flex:none;font:600 13px/1.3 var(--f-body);color:var(--muted);max-width:150px}
+.works-row{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center}
+.works-row>span{display:inline-flex;align-items:center;gap:8px;font:600 15px/1 var(--f-head);color:var(--ink-2);opacity:.85;transition:opacity .2s,transform .2s var(--ease)}
+.works-row>span:hover{opacity:1;transform:translateY(-2px)}
+.works-row .ic{--s:18px}
+.works-row .txt{font-weight:800;letter-spacing:-.01em;color:#8a90ad}
+
+.company{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.body-p{color:var(--ink-2);margin-top:16px;max-width:560px}
+.mv{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.mv-card{position:relative;padding:22px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line);transition:transform .2s var(--ease),box-shadow .2s}
+.mv-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.mv-card::before{content:"";position:absolute;left:22px;top:0;width:36px;height:3px;border-radius:0 0 3px 3px;background:var(--blue)}
+.mv-card:nth-child(2)::before{background:var(--orange)}
+.mv-k{display:block;font:700 13px/1 var(--f-body);text-transform:uppercase;letter-spacing:.08em;color:var(--ink);margin-bottom:10px}
+.mv-card p{font-size:15px;color:var(--ink-2)}
+.name-card{position:relative;overflow:hidden;padding:44px;border-radius:28px;background:linear-gradient(160deg,#fff 0%,#f4f6ff 55%,#fff4ee 100%);border:1px solid var(--line);box-shadow:var(--shadow-lg)}
+.name-k{font:600 13px/1 var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.name-card .word{margin-top:18px}
+.name-card p{margin-top:24px;color:var(--ink-2);max-width:420px;position:relative;z-index:1}
+.name-mark{position:absolute;right:-40px;bottom:-30px;width:240px;height:auto;opacity:.14;pointer-events:none}
+
+.steps4{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s;position:relative}
+.steps4::before{content:"";position:absolute;left:28px;right:28px;top:28px;height:2px;background:linear-gradient(90deg,var(--blue),var(--orange));opacity:.35}
+.steps4 li{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px;transition:transform .22s var(--ease),box-shadow .22s}
+.steps4 li:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.steps4 .n{display:grid;place-items:center;width:56px;height:56px;margin:-54px 0 18px;border-radius:16px;background:var(--ink);color:#fff;font:800 18px/1 var(--f-head);box-shadow:0 0 0 6px var(--bg)}
+.steps4 li:nth-child(2) .n{background:var(--blue)}
+.steps4 li:nth-child(3) .n{background:var(--green)}
+.steps4 li:nth-child(4) .n{background:var(--orange)}
+.steps4 h3{font-size:19px;margin-bottom:8px}
+.steps4 p{font-size:15px;color:var(--ink-2)}
+#approach .steps4{margin-top:30px}
+
+.values4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.careers{display:flex;align-items:center;justify-content:space-between;gap:32px;margin-top:28px;padding:36px 40px;border-radius:var(--r-lg);background:var(--band);color:var(--band-muted);position:relative;overflow:hidden}
+.careers::before{content:"";position:absolute;inset:0;background:radial-gradient(400px 220px at 90% 0%,rgba(37,99,235,.45),transparent 70%),radial-gradient(360px 200px at 0% 100%,rgba(242,102,42,.28),transparent 70%);pointer-events:none}
+.careers>*{position:relative}
+.careers .eyebrow{margin-bottom:10px}
+.careers h3{color:#fff;font-size:26px;margin-bottom:8px}
+.careers p{max-width:560px}
+.careers .btn{flex:none}
+
+footer{padding-top:72px}
+.f-top{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;padding-bottom:48px;margin-bottom:48px;border-bottom:1px solid var(--band-line)}
+.f-logo{height:40px;width:auto;margin-bottom:20px}
+.f-tag{font:800 clamp(24px,2.6vw,34px)/1.15 var(--f-head);letter-spacing:-.02em;color:#fff;max-width:520px}
+.f-sub{margin-top:10px}
+.f-grid{grid-template-columns:repeat(4,1fr)!important}
+
 /* responsive */
 @media (max-width:1100px){
+  .hero-grid,.company{grid-template-columns:1fr;gap:48px}
+  .steps4,.values4{grid-template-columns:1fr 1fr;row-gap:44px}
+  .steps4::before{display:none}
+  .f-crm{left:-12px}.f-shop{right:-8px}
+  .works{flex-direction:column;align-items:flex-start;gap:16px}
+  .works-l{max-width:none}
   .prices{grid-template-columns:repeat(2,1fr)}
   .products{grid-template-columns:1fr 1fr}
   .products>:last-child{grid-column:1/-1}
@@ -349,6 +425,14 @@ footer{background:var(--band);color:var(--band-muted);padding:64px 0 32px;font-s
   .pipe .col{min-height:auto}
 }
 @media (max-width:620px){
+  .steps4,.values4,.mv{grid-template-columns:1fr}
+  .float{display:none}
+  .careers{flex-direction:column;align-items:flex-start;padding:28px}
+  .careers .btn{width:100%}
+  .f-top{flex-direction:column;align-items:flex-start}
+  .f-grid{grid-template-columns:1fr 1fr!important}
+  .name-card{padding:28px}
+  .works-row{gap:12px 20px}
   .products,.prices,.values,.row2,.order,.ai-langs{grid-template-columns:1fr}
   .nav-cta .btn{display:none}
   .hero-actions .btn{width:100%}
@@ -380,7 +464,7 @@ footer{background:var(--band);color:var(--band-muted);padding:64px 0 32px;font-s
       <a href="#crm">Maxr CRM</a>
       <a href="#commerce">SR E-commerce</a>
       <a href="#pricing">Pricing</a>
-      <a href="#about">About</a>
+      <a href="#company">Company</a>
     </nav>
     <div class="nav-cta">
       <a class="btn btn--ghost btn--sm" href="https://chithii.com" target="_blank" rel="noopener">Sign in</a>
@@ -394,7 +478,7 @@ footer{background:var(--band);color:var(--band-muted);padding:64px 0 32px;font-s
     <a href="#crm">Maxr CRM</a>
     <a href="#commerce">SR E-commerce</a>
     <a href="#pricing">Pricing</a>
-    <a href="#about">About</a>
+    <a href="#company">Company</a>
     <a class="btn" href="#contact">Book a demo</a>
   </div>
 </header>
@@ -403,69 +487,104 @@ footer{background:var(--band);color:var(--band-muted);padding:64px 0 32px;font-s
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <div>
-      <span class="eyebrow">Business software · Made in Bangladesh</span>
-      <h1>Chat, sell and grow your business <span class="grad">from one place.</span></h1>
-      <p class="lead">Udbon builds software for businesses in Bangladesh: Chithii AI answers every customer chat in Bangla and English, Maxr CRM runs your sales pipeline, and SR E-commerce takes orders with bKash and courier booking built in.</p>
-      <div class="hero-actions">
-        <a class="btn" href="https://chithii.com/pricing" target="_blank" rel="noopener">Start Chithii AI free <span class="arr">→</span></a>
-        <a class="btn btn--ghost" href="#products">Explore products</a>
+    <div class="hero-grid">
+      <div>
+        <span class="badge"><i></i>3 products live · Made in Bangladesh</span>
+        <h1>Software that helps Bangladeshi businesses <span class="grad">grow.</span></h1>
+        <p class="lead">Udbon is a software company from Dhaka. We build Chithii AI, Maxr CRM and SR E-commerce, so your team can answer every customer, close every sale and deliver every order from one place.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#products">Explore our products <span class="arr">→</span></a>
+          <a class="btn btn--ghost" href="#contact">Book a demo</a>
+        </div>
+        <div class="hero-facts">
+          <div><b>3 live products</b><span>Chat, CRM and commerce</span></div>
+          <div><b>৳0 to start</b><span>Free plans and 14-day trials</span></div>
+          <div><b>Bangla first</b><span>Bangla, English, Banglish</span></div>
+        </div>
       </div>
-      <div class="hero-facts">
-        <div><b>3 live products</b><span>Chithii AI, Maxr CRM, SR E-commerce</span></div>
-        <div><b>৳0 to start</b><span>Free Chithii AI plan, no time limit</span></div>
-        <div><b>Bangla first</b><span>Bangla, English and Banglish</span></div>
+
+      <div class="hero-visual">
+        <div class="app" aria-label="Chithii AI shared inbox">
+          <div class="app-bar"><i></i><i></i><i></i><span class="t">Chithii AI · Inbox</span><span class="pill">● 3 agents online</span></div>
+          <div class="app-body">
+            <aside class="convs">
+              <div class="conv on"><div class="av" style="background:#2563eb">RA<span class="ch"><span class="ic i-wa" style="--s:11px"></span></span></div><div><div class="n">Rahima Akter <small>now</small></div><p>Delivery charge koto Dhaka te?</p></div></div>
+              <div class="conv"><div class="av" style="background:#0f9f7c">TH<span class="ch"><span class="ic i-ms" style="--s:11px"></span></span></div><div><div class="n">Tanvir Hasan <small>2m</small></div><p>Size L ache?</p></div></div>
+              <div class="conv"><div class="av" style="background:#f2662a">NS<span class="ch"><span class="ic i-ig" style="--s:11px"></span></span></div><div><div class="n">Nusrat S. <small>9m</small></div><p>Order confirm korte chai</p></div></div>
+              <div class="conv"><div class="av" style="background:#e0457b">MK<span class="ch"><span class="ic i-tg" style="--s:11px"></span></span></div><div><div class="n">Mahin Kabir <small>14m</small></div><p>Payment link pathan please</p></div></div>
+              <div class="conv"><div class="av" style="background:#363d63">FI<span class="ch"><span class="ic i-wa" style="--s:11px"></span></span></div><div><div class="n">Farhan Islam <small>21m</small></div><p>Thank you, peyechi!</p></div></div>
+              <div class="conv"><div class="av" style="background:#0f9f7c">SR<span class="ch"><span class="ic i-ms" style="--s:11px"></span></span></div><div><div class="n">Sadia Rahman <small>32m</small></div><p>Return policy ki?</p></div></div>
+            </aside>
+            <div class="thread">
+              <div class="thread-h">
+                <div class="av" style="background:#2563eb;width:30px;height:30px;font-size:11px">RA</div>
+                <div><b style="font-weight:600">Rahima Akter</b><div class="muted" style="font-size:11.5px;display:flex;gap:5px;align-items:center"><span class="ic i-wa" style="--s:11px"></span>WhatsApp</div></div>
+                <div class="tags"><span class="tag o">Order</span><span class="tag">Dhaka</span></div>
+              </div>
+              <div class="msgs">
+                <div class="m in">Assalamu alaikum, ei blue kurti ta ki available?</div>
+                <div class="m out">Walaikum assalam! Ji apu, M ar L size e ache.</div>
+                <div class="m in">Delivery charge koto Dhaka te? Ar kobe pabo?</div>
+                <div class="typing loop-typing"><i></i><i></i><i></i></div>
+                <div class="m ai loop-ai">
+                  <div class="who">✦ Chithii AI · from your knowledge <em>98% sure</em></div>
+                  Dhaka-r moddhe delivery charge ৳60, 1–2 diner moddhe peye jaben. bKash e payment link pathabo?
+                </div>
+              </div>
+              <div class="composer">Type a reply or press / for saved replies <span class="send">Send</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="float f-crm"><span class="tile" style="background:var(--green)">M</span><div><small>Maxr CRM · new lead</small><b>Rahima Akter</b><span>From WhatsApp · ৳2,480</span></div></div>
+        <div class="float f-shop"><span class="tile" style="background:var(--rose)">S</span><div><small>SR E-commerce · order #1042</small><b>Paid with bKash</b><span>Steadfast pickup today</span></div></div>
       </div>
     </div>
 
-    <div class="app" aria-label="Chithii shared inbox">
-      <div class="app-bar"><i></i><i></i><i></i><span class="t">Chithii AI · Inbox</span><span class="pill">● 3 agents online</span></div>
-      <div class="app-body">
-        <aside class="convs">
-          <div class="conv on">
-            <div class="av" style="background:#2563eb">RA<span class="ch"><span class="ic i-wa" style="--s:11px"></span></span></div>
-            <div><div class="n">Rahima Akter <small>now</small></div><p>Delivery charge koto Dhaka te?</p></div>
-          </div>
-          <div class="conv">
-            <div class="av" style="background:#0f9f7c">TH<span class="ch"><span class="ic i-ms" style="--s:11px"></span></span></div>
-            <div><div class="n">Tanvir Hasan <small>2m</small></div><p>Size L ache?</p></div>
-          </div>
-          <div class="conv">
-            <div class="av" style="background:#f2662a">NS<span class="ch"><span class="ic i-ig" style="--s:11px"></span></span></div>
-            <div><div class="n">Nusrat S. <small>9m</small></div><p>Order confirm korte chai</p></div>
-          </div>
-          <div class="conv">
-            <div class="av" style="background:#e0457b">MK<span class="ch"><span class="ic i-tg" style="--s:11px"></span></span></div>
-            <div><div class="n">Mahin Kabir <small>14m</small></div><p>Payment link pathan please</p></div>
-          </div>
-          <div class="conv">
-            <div class="av" style="background:#363d63">FI<span class="ch"><span class="ic i-wa" style="--s:11px"></span></span></div>
-            <div><div class="n">Farhan Islam <small>21m</small></div><p>Thank you, peyechi!</p></div>
-          </div>
-          <div class="conv">
-            <div class="av" style="background:#0f9f7c">SR<span class="ch"><span class="ic i-ms" style="--s:11px"></span></span></div>
-            <div><div class="n">Sadia Rahman <small>32m</small></div><p>Return policy ki?</p></div>
-          </div>
-        </aside>
-        <div class="thread">
-          <div class="thread-h">
-            <div class="av" style="background:#2563eb;width:30px;height:30px;font-size:11px">RA</div>
-            <div><b style="font-weight:600">Rahima Akter</b><div class="muted" style="font-size:11.5px;display:flex;gap:5px;align-items:center"><span class="ic i-wa" style="--s:11px"></span>WhatsApp</div></div>
-            <div class="tags"><span class="tag o">Order</span><span class="tag">Dhaka</span></div>
-          </div>
-          <div class="msgs">
-            <div class="m in">Assalamu alaikum, ei blue kurti ta ki available?</div>
-            <div class="m out">Walaikum assalam! Ji apu, M ar L size e ache.</div>
-            <div class="m in">Delivery charge koto Dhaka te? Ar kobe pabo?</div>
-            <div class="typing loop-typing"><i></i><i></i><i></i></div>
-            <div class="m ai loop-ai">
-              <div class="who">✦ AI reply · from your knowledge <em>98% sure</em></div>
-              Dhaka-r moddhe delivery charge ৳60, 1–2 diner moddhe peye jaben. bKash e payment link pathabo?
-            </div>
-          </div>
-          <div class="composer">Type a reply or press / for saved replies <span class="send">Send</span></div>
+    <div class="works">
+      <span class="works-l">Works with the tools you already use</span>
+      <div class="works-row">
+        <span><span class="ic i-wa"></span>WhatsApp</span>
+        <span><span class="ic i-ms"></span>Messenger</span>
+        <span><span class="ic i-ig"></span>Instagram</span>
+        <span><span class="ic i-tg"></span>Telegram</span>
+        <span><span class="ic i-sh"></span>Shopify</span>
+        <span><span class="ic i-wc"></span>WooCommerce</span>
+        <span><span class="ic i-gs"></span>Google Sheets</span>
+        <span class="txt">bKash</span>
+        <span class="txt">SSLCOMMERZ</span>
+        <span class="txt">Steadfast</span>
+        <span class="txt">Pathao</span>
+        <span class="txt">RedX</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPANY -->
+<section id="company">
+  <div class="wrap company">
+    <div>
+      <span class="eyebrow">About Udbon</span>
+      <h2>A Bangladeshi software company building for Bangladeshi businesses</h2>
+      <p class="lead" style="margin-top:20px">Most business software is made for other markets, priced in dollars and written in a language your customers don't speak. We started Udbon to change that.</p>
+      <p class="body-p">We build tools for the shops, brands and teams that sell on Facebook and WhatsApp, take payment by bKash and ship by courier. Every product we make speaks Bangla, is priced in Taka, and connects to the services businesses here already use.</p>
+      <div class="mv">
+        <div class="mv-card">
+          <span class="mv-k">Our mission</span>
+          <p>Make world-class business software simple and affordable for every business in Bangladesh, from a one-person Facebook shop to a multi-brand company.</p>
+        </div>
+        <div class="mv-card">
+          <span class="mv-k">Our vision</span>
+          <p>A Bangladesh where a local shop runs on software as good as any global brand, and grows just as far.</p>
         </div>
       </div>
+    </div>
+    <div class="name-card">
+      <span class="name-k">The meaning of our name</span>
+      <div class="word" lang="bn">উদ্বোধন</div>
+      <div class="word-sub"><span>Inauguration</span><span>Awakening</span><span>Beginning</span></div>
+      <p>Udbon comes from the Bangla word for a new beginning. That is what we want to give every business that works with us: a fresh start with better tools.</p>
+      <img src="assets/logo-mark.png" alt="" class="name-mark" width="368" height="245">
     </div>
   </div>
 </section>
@@ -700,6 +819,26 @@ footer{background:var(--band);color:var(--band-muted);padding:64px 0 32px;font-s
   </div>
 </section>
 
+<!-- APPROACH -->
+<section id="approach">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow">How we work</span>
+        <h2>From first call to growing business, we stay with you</h2>
+        <p class="lead">We don't just hand over a login. Our team helps you set up, go live and get more from every product.</p>
+      </div>
+      <a class="btn btn--ghost" href="#contact">Start with a call <span class="arr">→</span></a>
+    </div>
+    <ol class="steps4">
+      <li><span class="n">01</span><h3>Understand your business</h3><p>We learn how you sell today: your channels, your products, your team and where time is lost.</p></li>
+      <li><span class="n">02</span><h3>Set up together</h3><p>We connect your pages, WhatsApp, store and couriers, and load your products and answers.</p></li>
+      <li><span class="n">03</span><h3>Go live with your team</h3><p>Your team starts working in one place, with training in Bangla and help whenever it is needed.</p></li>
+      <li><span class="n">04</span><h3>Grow with new features</h3><p>We keep improving every product from your feedback, so the software grows as your business does.</p></li>
+    </ol>
+  </div>
+</section>
+
 <!-- PRICING -->
 <section id="pricing">
   <div class="wrap">
@@ -809,20 +948,28 @@ footer{background:var(--band);color:var(--band-muted);padding:64px 0 32px;font-s
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="wrap about">
-    <div>
-      <span class="eyebrow">About Udbon</span>
-      <div class="word" lang="bn">উদ্বোধন</div>
-      <div class="word-sub"><span>Inauguration</span><span>Awakening</span><span>Beginning</span></div>
-      <p class="lead" style="margin-top:28px">Our name means a new beginning. We build software for the shops, brands and teams of Bangladesh that sell in chat, take bKash and ship by courier, priced in Taka, written for how people here really talk.</p>
+<!-- VALUES -->
+<section id="values">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow">What we stand for</span>
+        <h2>The promises behind every Udbon product</h2>
+      </div>
     </div>
-    <div class="values">
-      <div class="val"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 5h16v11H8l-4 4z"/></svg></span><h3>Bangla first</h3><p>Every product reads and replies in Bangla, English and Banglish.</p></div>
-      <div class="val"><span class="ico"><b style="font:700 20px/1 var(--f-bn)">৳</b></span><h3>Priced in Taka</h3><p>Clear monthly plans, a free plan to start, pay by bKash or card.</p></div>
-      <div class="val"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 7h12v10H3zM15 10h4l2 3v4h-6"/><circle cx="7" cy="18" r="1.5"/><circle cx="18" cy="18" r="1.5"/></svg></span><h3>Built for local commerce</h3><p>bKash, SSLCOMMERZ, Steadfast, Pathao and RedX already connected.</p></div>
-      <div class="val"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></span><h3>A team you can reach</h3><p>Setup help from our own people, in Bangla, before and after you pay.</p></div>
+    <div class="values4">
+      <div class="val"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 5h16v11H8l-4 4z"/></svg></span><h3>Built for Bangladesh</h3><p>Bangla, English and Banglish in every product. bKash, SSLCOMMERZ, Steadfast, Pathao and RedX already connected.</p></div>
+      <div class="val"><span class="ico"><b style="font:700 20px/1 var(--f-bn)">৳</b></span><h3>Honest pricing in Taka</h3><p>Published monthly plans, a free plan or trial to start, and no surprise charges. Pay by bKash or card.</p></div>
+      <div class="val"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></span><h3>People who pick up</h3><p>Real support from our own team in Dhaka, in Bangla, before you pay and long after.</p></div>
+      <div class="val"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.5 8-8 9-4.5-1-8-4.5-8-9V6z"/></svg></span><h3>Your data stays yours</h3><p>Your customers and orders belong to you. We keep them safe and use them only to run your service.</p></div>
+    </div>
+    <div class="careers">
+      <div>
+        <span class="eyebrow" style="color:#ffb48c">Careers</span>
+        <h3>Build software for Bangladesh with us</h3>
+        <p>We are always glad to hear from engineers, designers and support people who want to build products for businesses here.</p>
+      </div>
+      <a class="btn btn--light" href="mailto:contact@udbon.com?subject=Careers%20at%20Udbon">Send us your CV <span class="arr">→</span></a>
     </div>
   </div>
 </section>
@@ -863,14 +1010,19 @@ footer{background:var(--band);color:var(--band-muted);padding:64px 0 32px;font-s
 
 <footer>
   <div class="wrap">
-    <div class="f-grid">
+    <div class="f-top">
       <div>
-        <img src="assets/logo-white.png" alt="Udbon" width="144" height="38">
-        <p style="max-width:300px">Chithii AI, Maxr CRM and SR E-commerce: software for businesses in Bangladesh.</p>
+        <img src="assets/logo-white.png" alt="Udbon" width="144" height="38" class="f-logo">
+        <p class="f-tag">Software that helps Bangladeshi businesses grow.</p>
+        <p class="f-sub">Chithii AI · Maxr CRM · SR E-commerce</p>
       </div>
-      <div><h4>Products</h4><ul><li><a href="https://chithii.com" target="_blank" rel="noopener">Chithii AI</a></li><li><a href="#crm">Maxr CRM</a></li><li><a href="#commerce">SR E-commerce</a></li></ul></div>
-      <div><h4>Company</h4><ul><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><li><a href="#pricing">Pricing</a></li><li><a href="mailto:privacy@udbon.com">Privacy</a></li></ul></div>
-      <div><h4>Get started</h4><ul><li><a href="https://chithii.com/pricing" target="_blank" rel="noopener">Start Chithii AI free</a></li><li><a href="#contact">Book a demo</a></li><li><a href="mailto:support@udbon.com">Get support</a></li></ul></div>
+      <a class="btn btn--light" href="#contact">Book a demo <span class="arr">→</span></a>
+    </div>
+    <div class="f-grid">
+      <div><h4>Products</h4><ul><li><a href="https://chithii.com" target="_blank" rel="noopener">Chithii AI</a></li><li><a href="#crm">Maxr CRM</a></li><li><a href="#commerce">SR E-commerce</a></li><li><a href="#pricing">Pricing</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="#company">About Udbon</a></li><li><a href="#approach">How we work</a></li><li><a href="#values">What we stand for</a></li><li><a href="mailto:contact@udbon.com?subject=Careers%20at%20Udbon">Careers</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="mailto:support@udbon.com">support@udbon.com</a></li><li><a href="mailto:contact@udbon.com">contact@udbon.com</a></li><li><a href="mailto:privacy@udbon.com">Privacy and data</a></li></ul></div>
+      <div><h4>Office</h4><ul><li>Dhaka, Bangladesh</li><li><a href="mailto:contact@udbon.com">Visit by appointment</a></li></ul></div>
     </div>
     <div class="f-bottom"><span>© <span id="yr">2026</span> Udbon. All rights reserved.</span><span>Brand icons by Simple Icons (CC0). Product names are trademarks of their owners.</span></div>
   </div>
