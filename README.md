@@ -1,6 +1,6 @@
 # Udbon
 
-Company website for **Udbon** (উদ্ভব: Inauguration · Awakening · Beginning), business software made in Bangladesh.
+Company website for **Udbon** (উদ্ভবন: Inauguration · Awakening · Beginning), business software made in Bangladesh.
 
 ## Products
 
